@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<title>Welcome to Little Paws Dog Walking</title>
+			<link rel="stylesheet" href="./CSS/one_page_website.css">
+			<script src="./JS/one_page_website.js"></script>
+		</head>
+		<body>
+
+		<!-- NAV -->
+		<div>
+			<div class="wrap">
+				<div class="menu-container">
+					<ul class="menu">
+						<a href="#home" id="link"><li>HOME</li></a>
+						<a href="#gallery" id="link"><li>GALLERY</li></a>
+						<a href="#video" id="link"><li>VIDEO</li></a>
+						<a href="#contact" id="link"><li>CONTACT</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--END NAV-->
+
+		<!-- HOME -->
+			<div id="home">
+				<div class="container">
+					<div class="text-conatiner">
+						<span class="head-main">Little Paws Of Love</span>
+					</div>
+				</div>
+			</div>		
+		<!-- END HOME -->
+
+		<!-- GALLERY -->
+		<section id="gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="flex-container">
+
+									<!-- PHOTO-CONTAINER 1 -->
+				<div class="PHOTO-CONTAINER">
+					<div class="photo">
+						<img src="littlepaws.png" alt="">
+						<div class="photo-overlay">
+						</div>
+							<p>Would you take me for a walk?</p>
+						</div>
+						</div>
+
+		
+		 <!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="walk1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="walk2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="walk3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="walk4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="walk1 - Copy.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="walk2 - Copy.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="walk3 - Copy.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="walk4 - Copy.png" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="walk1.png" onclick="currentSlide(1)" alt="Would you take me for a walk?">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="walk2.png" onclick="currentSlide(2)" alt="Would you take me for a walk?">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="walk3.png" onclick="currentSlide(3)" alt="Would you take me for a walk?">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="walk4.png" onclick="currentSlide(4)" alt="Would you take me for a walk?">
+	  </div>
+	</div>
+  </div> 
+
+
+
+		<!-- VIDEO -->
+		<section id="video">
+			<div class="video">
+				<h1>Video</h1>
+				<div>
+					<a href="https://www.youtube.com/watch?v=wjBg5Nlx1HM">How to Teach your Dog to Walk on Leash</a>
+				</div>
+			</div>
+		<!-- END VIDEO -->
+
+		<!-- RSVP -->
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Reservations</h1>
+						<div class="reservations">
+						<h2><span>Your walk is just around the start!</span>
+							<br/> Make your booking today !
+						</h2>
+					<p class="rsvp-text">
+						Please provide us with basic information.
+					</p>
+						<div class="form-rsvp">
+							<form action="" method="post">
+							<input class="rsvp" type="text" value="" placeholder="First Name">
+							<input class="rsvp" type="text" value="" placeholder="Last Name">
+							<input class="rsvp" type="text" value="" placeholder="Email Address">
+							<input class="rsvp" type="text" value="" placeholder="Phone Number">
+							<div class="form-spacer">
+							</div>	
+							<div class="submit">
+								<label class="terms">Terms and Conditions</label>
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>				
+	</section>
+	<!-- END RSVP -->
+
+	<!-- FOOTER -->
+	<div id="footer">
+		https://www.bark.com/en/ie/dog-walking/ &nbsp;/&nbsp; &copy; 2024
+	</div>
+	<!-- END FOOTER -->
+
+	</body>
+</html>
